@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width" />
 
     <title>chrisdev - html</title>
-    <link rel="stylesheet" href="../theme/css/normalize.css">
     <link rel="stylesheet" href="../theme/css/foundation.css">
     <link rel="stylesheet" href="../theme/css/foundation-icons.css">
-    <link rel="stylesheet" href="../theme/css/style.css">
+    <link rel="stylesheet" href="../theme/css/styles.css">
     <link rel="stylesheet" href="../theme/css/pygment.css">
+   
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    
     <script src="../theme/js/vendor/modernizr.js"></script>
 </head>
 
@@ -21,26 +23,39 @@
 
 <!-- Nav Bar -->
 
-<div class="contain-to-grid sticky">
-    <nav class="top-bar" data-topbar>
-    		<ul class="title-area">
-    		    <li class="name">
-		          <a href="..">
-    		          <img src="../theme/images/chris_dev_topbar_logo.png" alt="" /> 
-		          </a>
-    		    </li>
-    		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    		</ul>
+<div id="top" class="row hide-for-small" style="margin-top: 5px;">
+    <li style="float: right; text-align: right; font-size: 22px; color: #fff; padding-left: 15px; list-style: none;">
+        <i class="fi-social-facebook"></i>
+        <i class="fi-social-twitter"></i>
+        <i class="fi-social-linkedin"></i>
+        <i class="fi-social-youtube"></i>
+    </li>
+</div>
+
+<div id="menu" class="row hide-for-small">
+      <div class="large-4 columns"> <img src="../theme/images/chris_dev_topbar_logo.png"></div>
+      <div class="large-3 columns">&nbsp;</div>
+      <div style="margin-top: 10px;" class="large-5 columns">
+          <div class="large-4 columns"><h5><a href="/">Home</a></h5></div>
+          <div class="large-4 columns"><h5><a href="http://www.chrisdev.com/">About Us</a></h5></div>
+          <div class="large-4 columns"><h5><a href="http://www.chrisdev.com/contact_us/">Contact Us</a></h5></div>
+      </div>
+</div>
+
+<div class="contain-to-grid sticky show-for-small">
+	    <nav class="top-bar" data-topbar>
+	      	<ul class="title-area">	
+	        	<li class="names"><h3 style="color: #fff;">ChrisDev Blog</h3></li>
+	        	<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>
 	        <section class="top-bar-section">
 	        	<ul class="right">
-			        <li class="divider"></li>
-			        <li><a href="http://www.chrisdev.com/">About</a></li>
-			        <li class="divider"></li>
-			        <li><a href="http://www.chrisdev.com/contact_us/">Contact</a></li>
-			        <li class="divider"></li>
+			        <li><a href="/">Home</a></li>
+			        <li><a href="http://www.chrisdev.com/">About Us</a></li>
+			        <li><a href="http://www.chrisdev.com/contact_us/">Contact Us</a></li>
 	        	</ul>
 	        </section>
-    </nav>
+	    </nav>
 </div>
 
 <!-- End Nav -->
@@ -53,68 +68,46 @@
     <!-- Main Blog Content -->
     <div class="large-9 columns">
         <div class="panel radius">
-            <h3>Welcome to my Blog</h3>
-            <p>
-            I'm Christopher Clarke and I write mainly about Python, Django and
-            Python Data tools.
-            
-            </p>
+            <h3>Welcome To ChrisDev Blog</h3>
+            <p>I am Christopher Clarke and I write about python.</p>
         </div>
         
         
 
             <article>
-                <h3 class="article-title"><a href="../book-review-getting-started-with-zurb-foundation.html">Book Review: Getting Started with Zurb Foundation 4 by Andrew D. Patterson</a></h3>
+                <h3 class="article-title"><a href="../machine-setup.html"></a></h3>
+<h6 class="subheader" title="2014-03-12T00:00:00">Wednesday, March 12, 2014
+</h6>
+
+
+<p class="subheader">Category: <a href="../category/html.html">html</a>
+
+    Tagged: 
+    <a href="../tag/vagrant.html">Vagrant </a>
+    <a href="../tag/machine.html">Machine </a>
+    <a href="../tag/mac.html">Mac </a>
+</p>
+
+
+
+<p><a href="../machine-setup.html#disqus_thread">comments</a></p>            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
+                <a href="../book-review-getting-started-with-zurb-foundation.html"><h3 class="article-title">Book Review: Getting Started with Zurb Foundation 4 by Andrew D. Patterson</h3></a>
 <h6 class="subheader" title="2014-02-23T00:00:00">Sunday, February 23, 2014
 </h6>
 
 
-<p>I was really looking forward to reviewing this book as I'm a big fan of <a class="reference external" href="http://foundation.zurb.com">Zurb
-Foundation</a> as I think that it is by far the <a class="reference external" href="http://responsive.vermilion.com/compare.php?framework=current">best</a> responsive framework out
-there. Indeed, at work here at <a class="reference external" href="http://chrisdev.com">ChrisDev</a>,  we use Foundation for all our web
-based projects.</p>
-<p>The book is supposed to aimed at web architects, designers, and builders who
-were already familiar with the basics principles of responsive design and
-is divided up into four chapters. I found that
-<cite>Chapter 1: Getting The Most from the Grid System</cite> was the most useful of the
-lot. The author discussed in some detail his approach
-to dealing with a number of practical layout issues including: nesting rows in
-columns; understanding and customizing column gutters; maintaining row and page
-width; mobile first design (or what the author calls designing from small to to
-large); rearranging columns and so on.  While I found that this chapter hit
-all the basics I felt more emphasis should have been placed on the implications
-of mobile first design as this has always been Foundation's big selling
-point over rivals such as <a class="reference external" href="http://getbootstrap.com">Twitter BootStrap</a>.  Also, it was strange
-that there was no mention of some of the great resources provided by Zurb such
-as the <a class="reference external" href="http://foundation.zurb.com/templates4.html">Foundation 4 Templates</a> which provide a number of canned layouts for
-various kinds of sites (blogs, marketing product page etc.) that can be a great
-starting point for customizing layout.</p>
-<p>I was a little disappointed in the next two chapters which covered the CSS and
-JavaScript components provided with Foundation. These seemed a little cursory and
-there was little that went beyond the <a class="reference external" href="http://docs.foundation.com">online documentation</a>.
-Of course Foundation comes with more than twenty CSS components about twelve
-JavaScript Plugins so it would have been unrealistic to expect a comprehensive
-treatment of all these components, but maybe the author could have singled out
-the more popular component such as Orbit for more comprehensive treatment.</p>
-<p>The final chapter covered <a class="reference external" href="http://sass-lang.com">Sass</a>. I felt that there was a lot of good material
-here and readers unfamiliar with Sass would find it quite enlightening.
-I particularly liked the sections entitled <em>Customizing with Variables</em> and
-<em>Understanding functions and mixins</em>. However, I felt that more emphasis should
-have been placed on this topic given that Sass has become the most efficient
-way to customize and style layout, components and plugins.  I would have
-preferred if Sass could have been introduced very early on (probably as Chapter
-2) and the subsequent chapters covering CSS and JavaScript components each
-contain a section on how to customize one or more of the components or plugins
-with Sass.</p>
-<p>Overall, I would have to give this book a 3 out of 5 stars since it covers the
-basics and provides a good supplement for the <a class="reference external" href="http://docs.foundation.com">online documentation</a>. However,
-I feel that for more experienced designers, architects and builders the book
-will prove to be a bit of a disappointment. Aside from <cite>Chapter 1</cite>, it provides
-little in the way of a practical approach or even  some guidelines for building
-real world responsive sites with Foundation.  This is important in the context
-of a rapidly evolving framework like Zurb Foundation, where we are we are
-reviewing a book about <cite>version 4</cite> while <a class="reference external" href="http://foundation.zurb.com/docs/changelog.html">Foundation 5</a> has been out since
-November 21, 2013.</p>
+<p class="first last">Covers the all the basics but does not provide enough by way of practical
+guidelines that readers could apply to building real world
+responsive sites.</p>
 <p class="subheader">Category: <a href="../category/html.html">html</a>
 
     Tagged: 
@@ -128,10 +121,9 @@ November 21, 2013.</p>
 
 
 
-<p><a href="../book-review-getting-started-with-zurb-foundation.html#disqus_thread">comments</a></p>            </article>
-
-
-
+<p><a href="../book-review-getting-started-with-zurb-foundation.html#disqus_thread">comments</a></p>                <a class="button radius tiny right" href="../book-review-getting-started-with-zurb-foundation.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
 
             <!-- /#posts-list -->
 
@@ -163,6 +155,7 @@ November 21, 2013.</p>
                 <li><a href="/feed/all.atom.xml"><i class="fi-rss"></i>&nbsp; Subcribe to my feed</a></li>
             </ul>
         </div>
+        
     </aside> <!-- End Sidebar -->
 
 </div> <!-- End Main Content and Sidebar -->
@@ -170,10 +163,11 @@ November 21, 2013.</p>
 
 <!-- Footer -->
 <footer class="row">
-<div class="large-12 columns">
+  <div class="large-12 columns">
+    <hr />
       <div class="row">
         <div class="large-6 columns">
-             <h6><strong>Contact Us</strong></h6>                                             
+            <h6><strong>Contact Us</strong></h6>                                             
             <ul>                                                                             
                 <li>Phone (Cell):&nbsp;+(868)-773-4644</li>                              
                 <li>Phone (Office):&nbsp;+(868)-221-6277</li>                            
@@ -183,7 +177,7 @@ November 21, 2013.</p>
         <div class="large-6 columns">
             <h6><strong>Need a Website?</strong></h6> 
             <p> If you need a website or a looking for a web based project fill out our
-                <a href="www.chrisdev.com/contact_us/client-project-form/">client project form</a>.
+                <a href="http://www.chrisdev.com/contact_us/client-project-form/">client project form</a>.
             Remember you can always email  us or call us if you have questions or need more information,
             </p>
         </div>

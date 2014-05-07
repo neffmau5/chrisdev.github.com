@@ -1,6 +1,17 @@
-===================================
 Trinidad and Tobago DevOps Workshop
-===================================
+###################################
+
+
+:date: 2014-03-12
+:tags: Vagrant, Ansiable, 
+:category:  html
+:slug: tt-devops-workshop
+:author: Sule Marshall
+:summary: Covers the agend of the workshop.
+
+
+
+ 
 
 The Trinidad and Tobago DevOps workshop is a workshop designed to help participants further their web development prowess
 through the use of various modern development technologies. In the workshop. participants will work with technologies such 
